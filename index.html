@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zelena staza</title>
+<link rel="stylesheet" href="css/framework.css">
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/biblioteka.js"></script>
+</head>
+<body>
+<div class="zaglavlje">
+  <div class="logo">Zelena staza</div>
+  <div class="meni">
+    <div class="stavka" onclick="location.href='#ture'">Ture</div>
+    <div class="stavka" onclick="location.href='#o-nama'">O nama</div>
+    <div class="stavka" onclick="location.href='#kontakt'">Kontakt</div>
+  </div>
+</div>
+<div id="baner-mjesto"></div>
+<div class="hero">
+  <img src="img/hero.jpg" class="hero-slika">
+  <div class="hero-tekst">
+    <div class="naslov">Otkrijte planine koje niste poznavali</div>
+    <div class="podnaslov">Vođene ture kroz netaknutu prirodu, za sve uzraste i nivoe kondicije.</div>
+    <div class="dugme" onclick="location.href='#ture'">Pogledaj ture</div>
+  </div>
+</div>
+<div class="uvod" id="o-nama">
+  <div class="uvod-naslov">Putovanje koje počinje prvim korakom</div>
+  <p>Već deset godina organizujemo planinarske i biciklističke ture kroz najljepše predjele regiona. Naši vodiči poznaju svaku stazu, svaki izvor i svako skrovito mjesto za odmor. Bez obzira na to da li ste iskusan planinar ili tek počinjete, za vas imamo turu prilagođenu vašem tempu.</p>
+</div>
+<div class="mreza" id="ture">
+  <div class="kartica"><img src="img/kartica1.jpg"><div class="k-naslov">Vrhovi iznad oblaka</div><div class="k-tekst">Dvodnevni uspon sa noćenjem u planinarskom domu.</div><div class="k-cijena">od 89 KM</div></div>
+  <div class="kartica"><img src="img/kartica2.jpg"><div class="k-naslov">Zalazak na jezeru</div><div class="k-tekst">Lagana večernja šetnja uz obalu i fotografisanje.</div><div class="k-cijena">od 35 KM</div></div>
+  <div class="kartica"><img src="img/kartica3.jpg"><div class="k-naslov">Snježni grebeni</div><div class="k-tekst">Zimska tura sa krpljama i stručnim vodičem.</div><div class="k-cijena">od 120 KM</div></div>
+  <div class="kartica"><img src="img/kartica4.jpg"><div class="k-naslov">Noć pod zvijezdama</div><div class="k-tekst">Kampovanje i posmatranje neba daleko od gradskih svjetala.</div><div class="k-cijena">od 75 KM</div></div>
+  <div class="kartica"><img src="img/kartica5.jpg"><div class="k-naslov">Polja i livade</div><div class="k-tekst">Biciklistička tura kroz sela i pašnjake.</div><div class="k-cijena">od 45 KM</div></div>
+  <div class="kartica"><img src="img/kartica6.jpg"><div class="k-naslov">Kanjon rijeke</div><div class="k-tekst">Pješačenje uz rijeku i kupanje u prirodnim bazenima.</div><div class="k-cijena">od 60 KM</div></div>
+</div>
+<div class="prijava" id="kontakt">
+  <div class="uvod-naslov">Prijavite se na novosti</div>
+  <input type="text" placeholder="Ime">
+  <input type="text" placeholder="E-mail">
+  <div class="dugme" onclick="alert('Hvala!')">Pošalji</div>
+</div>
+<div class="podnozje">© 2026 Zelena staza · Sva prava zadržana</div>
+<script>
+setTimeout(function(){
+  var b=document.createElement('div');b.className='baner';
+  b.innerHTML='Ljetni popust 20% na sve ture! Rezervišite do kraja mjeseca.';
+  document.getElementById('baner-mjesto').appendChild(b);
+},1200);
+</script>
+</body>
+</html>

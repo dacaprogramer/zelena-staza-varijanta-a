@@ -1,0 +1,31 @@
+ZELENA STAZA – VARIJANTA A (NEOPTIMIZOVANA)
+Primjer stranice iz rada „Odluke u web dizajnu i njihov uticaj na rad web stranice“
+
+Ova varijanta namjerno sadrži tipične neoptimizovane odluke opisane u radu:
+fotografije u JPEG formatu visokog kvaliteta i većih dimenzija od prikaza, bez
+atributa width/height; sedam TTF fontova sa font-display: block; veliki CSS okvir
+i JavaScript biblioteka u zaglavlju bez atributa defer; baner koji se nakon 1,2 s
+ubacuje iznad sadržaja i pomjera ga; meni i dugmad od elemenata div; fiksna
+širina od 1280 px bez oznake viewport; svijetlosivi tekst niskog kontrasta.
+
+SADRŽAJ
+  index.html              stranica
+  css/stil.css            stilovi stranice
+  css/framework.css       sintetički CSS okvir (~140 KB, gotovo ništa se ne koristi)
+  js/biblioteka.js        sintetička JS biblioteka (~650 KB, ~180 ms izvršavanja)
+  img/                    hero.jpg (2400×1200) i kartica1–6.jpg (1200×800)
+  Poppins-*.ttf, Lora-Variable.ttf   fontovi (SIL Open Font License 1.1)
+  izvor/                  skripte kojima su napravljene slike, CSS i JS
+
+framework.css i biblioteka.js nisu stvarne biblioteke. Napravljene su skriptom
+izvor/napravi_okvir_a.py da simuliraju veliki okvir, a ponovno pokretanje daje
+identične datoteke. Slike su proceduralno generisani pejzaži
+(izvor/napravi_slike_a.py), bez autorskih fotografija.
+
+OTVARANJE
+Najpouzdanije je preko lokalnog servera, jer neki preglednici ne učitavaju
+fontove sa file:// adrese:
+    python -m http.server 8001
+pa u pregledniku otvoriti http://localhost:8001/
+Tako su stranice posluživane i pri mjerenju u radu (bez kompresije).
+Za simulaciju spore mreže: Chrome DevTools > Network > Slow 4G, uz isključen keš.
