@@ -1,0 +1,28 @@
+@font-face{font-family:'Poppins';src:url('../Poppins-Light.ttf');font-weight:300;font-display:block}
+@font-face{font-family:'Poppins';src:url('../Poppins-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('../Poppins-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Poppins';src:url('../Poppins-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Poppins';src:url('../Poppins-Italic.ttf');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Poppins';src:url('../Poppins-BoldItalic.ttf');font-weight:700;font-style:italic;font-display:block}
+@font-face{font-family:'Lora';src:url('../Lora-Variable.ttf');font-display:block}
+body{margin:0;font-family:'Poppins',sans-serif;font-weight:300;color:#9a9a9a;background:#fff;width:1280px}
+.zaglavlje{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:#fff}
+.logo{font-family:'Lora',serif;font-size:26px;color:#7fbf7f;font-weight:700}
+.meni{display:flex;gap:30px}.stavka{cursor:pointer;color:#b5b5b5;font-weight:500}
+.baner{background:#ffe9a8;color:#c9a227;text-align:center;padding:22px;font-size:18px;font-style:italic}
+.hero{position:relative}.hero-slika{width:100%;display:block}
+.hero-tekst{position:absolute;top:22%;left:8%;color:#fff}
+.naslov{font-family:'Lora',serif;font-size:54px;max-width:640px;line-height:1.1}
+.podnaslov{font-size:18px;margin:14px 0 24px;font-style:italic;color:#e8e8e8}
+.dugme{display:inline-block;background:#9fd89f;color:#fff;padding:14px 30px;border-radius:30px;cursor:pointer;font-weight:700}
+.uvod{padding:50px 40px;max-width:1200px}
+.uvod-naslov{font-family:'Lora',serif;font-size:32px;color:#8a8a8a;margin-bottom:12px}
+.uvod p{font-size:15px;line-height:1.5}
+.mreza{display:flex;flex-wrap:wrap;gap:24px;padding:0 40px 40px}
+.kartica{width:385px;background:#fafafa}.kartica img{width:100%;display:block}
+.k-naslov{font-weight:700;font-size:20px;color:#888;padding:12px 14px 4px}
+.k-tekst{padding:0 14px;font-size:14px;color:#b0b0b0}
+.k-cijena{padding:10px 14px 16px;color:#a5d6a5;font-weight:700;font-style:italic}
+.prijava{padding:40px;background:#f6f6f6}
+.prijava input{padding:12px;border:1px solid #eee;margin-right:10px;font-size:15px;width:240px}
+.podnozje{padding:24px 40px;font-size:13px;color:#ccc}
